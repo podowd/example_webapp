@@ -1,0 +1,11 @@
+<div class="row">
+ 	<input ng-model="query"></input>&nbsp;<button ng-disabled="searchInProgress" ng-click="search()">Search</button> <label>{{status}}</label>
+</div>
+<BR>
+<div class="row">
+	<table>
+	  <tr ng-repeat="result in results">
+	    <td>{{result.message}}</td>
+	  </tr>
+	</table>
+</div>
